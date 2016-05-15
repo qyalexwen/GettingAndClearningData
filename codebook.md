@@ -20,7 +20,6 @@ DITEN -- Università degli Studi di Genova, Genoa (I16145), Italy.
 Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain
 activityrecognition '@' smartlab.ws
 
-3. Original data set from [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ## Data Set Information
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19--48 years.
@@ -31,6 +30,7 @@ to label the data manually.
 The sensor signals (accelerometer and gyroscope) were preprocessed by applying noise filters and then sampled in fixedwidth
 sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth lowpass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. At last, the 128 samples in the same window are applied "mean" and "standard deviation", and only these 2 values are preserved.
 
+Original data set from [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  For more details on the original data, please refer to the __readme.md__. 
 
 ## Attribute Information
 1. Column 1 "subject", the subjects that perform the test, value from 1-30. 
