@@ -11,6 +11,7 @@ The 10299 rows are composed of the training data ( 7352 rows) and the testing da
 
 ### Columns
 The 581 columns are composed of 
+
 1. Column 1 "subject", is merged from subject_train.txt and subject_test.txt 
 2. Column 2 "activity", is merged from y_train.txt and y_test.txt, and joined with activity_labels.txt to use the acitivity description instead of the integer identifier. 
 3. Column 3 to 563 are merged from X_train.txt and X_test.txt, with names copied from features.txt. The descriptions for the features are in feature_info.txt 
