@@ -9,7 +9,7 @@
 |readme.md              | This file.                                            |  
 |run_analysis.R         |The script file in R and does the above 1-5 process.   |
 |activity_labels.txt    |The mapping between identifier and the activity names. |
-|features.txt           |A list of the 561 values                               | 
+|features.txt           |A list of the 561 features.                               | 
 |features_info.txst     | Description of the 561 features.                      | 
 
 ## How the script works 
