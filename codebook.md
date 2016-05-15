@@ -30,8 +30,6 @@ to label the data manually.
 The sensor signals (accelerometer and gyroscope) were preprocessed by applying noise filters and then sampled in fixedwidth
 sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth lowpass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. At last, the 128 samples in the same window are applied "mean" and "standard deviation", and only these 2 values are preserved.
 
-Original data set from [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).  For more details on the original data, please refer to the __readme.md__. 
-
 ## Attribute Information
 1. Column 1 "subject", the subjects that perform the test, value from 1-30. 
 2. Column 2 "activity", name of the activity. Values are in activity_labels.txt .  
@@ -41,7 +39,18 @@ Original data set from [here](http://archive.ics.uci.edu/ml/datasets/Human+Activ
 5. Column 576 to 581 are triaxial acceleration from the accelerometer (total acceleration). Mean and standard deviation of x,y,z samples. 
  
 
+## Process
+The original data from the [UCI web site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) has been processed in the following manner: 
 
+1. The training set(7352 rows) and the test set(2947 rows) are merged. That makes up to 10299 rows. 
+
+2. The triaxis measurements (body acceleration, total acceleration, and gyroscope) are __only__ extracted by mean and standard deviation. The 128 samples are discarded. 
+
+3. Use descriptive activity names instead of the integer identifier. However the mapping from the identifier to the names are reserved in activity_labels.txt . 
+
+4. The 561 measurements are named with descriptive variable names. The names are also in features.txt, and features_info.txt. 
+
+5. All the data processed are merged into a big data matrix. 
 
 
 

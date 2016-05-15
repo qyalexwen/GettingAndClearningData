@@ -165,8 +165,11 @@ data <- cbind(
    total_acc_z_mean, total_acc_z_sd
 ) 
  
+print ("Writing tidy data to result.csv") 
 write.csv(data, "result.csv") 
+print ("Done." )
 
+    
 
 
 
