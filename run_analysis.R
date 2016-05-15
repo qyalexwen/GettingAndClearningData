@@ -142,7 +142,10 @@ rm(y)
 
 # Question 4. Appropriately labels the data set with descriptive variable names.
 features <- read.table( paste0(dir1, "\\features.txt"))
-names(x) <- t(features[,2]) 
+feature_names <- gsub("-", "_", features[,2])
+feature_names <- gsub(",", "_", feature_names)
+feature_names <- gsub("[()]", "", feature_names) 
+names(x) <- t(feature_names) 
 names(subject) <- c("subject") 
 
 # Question 5. 5. From the data set in step 4, creates a second, 
@@ -165,8 +168,8 @@ data <- cbind(
    total_acc_z_mean, total_acc_z_sd
 ) 
  
-print ("Writing tidy data to result.csv") 
-write.csv(data, "result.csv") 
+print ("Writing tidy data to data_set.txt") 
+write.table(data, "data_set.txt", row.names=FALSE) 
 print ("Done." )
 
     
