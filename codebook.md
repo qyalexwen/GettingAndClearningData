@@ -33,7 +33,7 @@ sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor ac
 ## Attribute Information
 1. Column 1 "subject", the subjects that perform the test, value from 1-30. 
 2. Column 2 "activity", name of the activity. Values are in activity_labels.txt .  
-3. Column 3 to 563 are 561 values with names copied from features.txt. The descriptions for the features are in feature_info.txt and features.txt . 
+3. Column 3 to 563 are 561 values with names processed(replace special charactors) from features.txt. The descriptions for the features are in feature_info.txt and features.txt . 
 4. Column 564 to 569 are the body_accelection triaxis data, which is the total acceleration minus the g. Mean and standard deviation of x,y,z samples. 
 5. Column 570 to 575 are the gyroscope triaxis data. Mean and standard deviation of x,y,z samples. 
 5. Column 576 to 581 are triaxial acceleration from the accelerometer (total acceleration). Mean and standard deviation of x,y,z samples. 
