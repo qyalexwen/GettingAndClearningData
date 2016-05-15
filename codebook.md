@@ -9,7 +9,7 @@ of daily living (ADL) while carrying a waist mounted smartphone with embedded in
 ### Instances 
 The 10299 rows are composed of the training data ( 7352 rows) and the testing data set (2947 rows). 
 
-** Source** :
+** Source ** :
 Jorge L. ReyesOrtiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
 1. Smartlab NonLinear Complex Systems Laboratory
 DITEN -- Università degli Studi di Genova, Genoa (I16145), Italy.
