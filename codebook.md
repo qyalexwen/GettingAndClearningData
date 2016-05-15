@@ -3,11 +3,14 @@
 ## Abstract
 Human Activity Recognition database built from the recordings of 30 subjects performing activities
 of daily living (ADL) while carrying a waist mounted smartphone with embedded inertial sensors.
-__Data Set Characteristics__: Multivariate, TimeSeries
-** Number of Instances **(Rows) : 10299
-** Number of Attributes: **(Columns): 581 
 
-**Source** :
+__Data Set Characteristics__: Multivariate, TimeSeries
+
+__Number of Instances__(Rows) : 10299
+ 
+__Number of Attributes__(Columns): 581 
+
+## Source
 Jorge L. ReyesOrtiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
 1. Smartlab NonLinear Complex Systems Laboratory
 DITEN -- Università degli Studi di Genova, Genoa (I16145), Italy.
