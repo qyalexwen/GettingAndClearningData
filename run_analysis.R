@@ -142,8 +142,9 @@ rm(y)
 
 # Question 4. Appropriately labels the data set with descriptive variable names.
 features <- read.table( paste0(dir1, "\\features.txt"))
-feature_names <- gsub("-", "_", features[,2])
-feature_names <- gsub(",", "_", feature_names)
+feature_names <- paste("f",features$V1,"-",features$V2, sep="")
+feature_names <- gsub("-", "_",   feature_names)
+feature_names <- gsub(",", "_",   feature_names)
 feature_names <- gsub("[()]", "", feature_names) 
 names(x) <- t(feature_names) 
 names(subject) <- c("subject") 
@@ -170,9 +171,18 @@ data <- cbind(
  
 print ("Writing tidy data to data_set.txt") 
 write.table(data, "data_set.txt", row.names=FALSE) 
-print ("Done." )
 
+data_by_activity_subject <- group_by(data, activity, subject) 
+
+# Sorry, don't know how to do mean on multiple variables yet. 
+data_mean<- summarize(
+   data_by_activity_subject, 
+   mean(body_gyro_x_mean),
+    mean(body_acc_x_mean), 
+    mean(body_acc_y_mean), 
+    mean(body_acc_z_mean)
+) 
     
-
+print(data_mean) 
 
 
