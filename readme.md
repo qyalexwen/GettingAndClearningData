@@ -4,7 +4,6 @@
 
 |File name              |  Description  |
 |-----------------------|:-------------:|
-|result.zip(result.csv) |  The data set result.csv is compressed into this zip file.               |
 |codebook.md            |  The codebook that describes the data set.            |
 |readme.md              | This file.                                            |  
 |run_analysis.R         |The script file in R and does the above 1-5 process.   |
