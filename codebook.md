@@ -8,7 +8,7 @@ __Data Set Characteristics__: Multivariate, TimeSeries
 
 __Number of Instances__(Rows) : 10299
  
-__Number of Attributes__(Columns): 581 
+__Number of Attributes__(Columns): 68 
 
 ## Source
 Jorge L. ReyesOrtiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
@@ -35,26 +35,22 @@ The above sensor signals, as well as the other processed 561 variables, are aver
 ## Attribute Information
 1. Column 1 "activity", name of the activity. Values are in activity_labels.txt .
 2. Column 2 "subject",  the subjects that perform the test, value from 1-30.
-3. Column 3 to 563 are 561 values with names processed(replace special charactors) from features.txt. The descriptions for the features are in feature_info.txt and features.txt . 
-4. Column 564 to 569 are the body_accelection triaxis data, which is the total acceleration minus the g. Mean and standard deviation of x,y,z samples. 
-5. Column 570 to 575 are the gyroscope triaxis data. Mean and standard deviation of x,y,z samples. 
-5. Column 576 to 581 are triaxial acceleration from the accelerometer (total acceleration). Mean and standard deviation of x,y,z samples. 
- 
+3. Column 3 to 68 are variables calculated with mean and standard deviation, and then averaged by activity and subject. 
 
 ## Process
 The original data from the [UCI web site](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) has been processed in the following manner: 
 
 1. The training set(7352 rows) and the test set(2947 rows) are merged. That makes up to 10299 rows. 
 
-2. The triaxis measurements (body acceleration, total acceleration, and gyroscope) are __only__ extracted by mean and standard deviation. The 128 samples are discarded. 
+2. The variables in X are extracted only with the mean() and std() in their names.  
 
 3. Use descriptive activity names instead of the integer identifier. However the mapping from the identifier to the names are reserved in activity_labels.txt . 
 
-4. The 561 measurements are named with descriptive variable names. The names are also in features.txt, and features_info.txt. 
+4. The extracted variables are named with descriptive variable names. The names are also in features.txt, and features_info.txt. 
 
 5. All the data processed are merged into a big data matrix. 
 
-6. The above data from point #2 and #4, are averaged by each activity and each subject. 
+6. The above data from point #2 are averaged by each activity and each subject. 
 
 
 

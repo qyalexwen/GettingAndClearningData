@@ -13,7 +13,7 @@
 |names.txt              | Variable names of the data set. |
 
 ## How the script works 
-Assume that the extracted data set with the "UCI HAR Dataset" folder is in the current working folder. Run the script 
+Assume that the extracted data set with the "data" folder is in the current working folder. Run the script 
 run_analysis.R and it will read and transform the data, and save to a file "data_set.txt". 
 
 
