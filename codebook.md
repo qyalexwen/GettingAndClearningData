@@ -30,9 +30,11 @@ to label the data manually.
 The sensor signals (accelerometer and gyroscope) were preprocessed by applying noise filters and then sampled in fixedwidth
 sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth lowpass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. At last, the 128 samples in the same window are applied "mean" and "standard deviation", and only these 2 values are preserved.
 
+The above sensor signals, as well as the other processed 561 variables, are averaged by each activity and each subject. 
+
 ## Attribute Information
-1. Column 1 "subject", the subjects that perform the test, value from 1-30. 
-2. Column 2 "activity", name of the activity. Values are in activity_labels.txt .  
+1. Column 1 "activity", name of the activity. Values are in activity_labels.txt .
+2. Column 2 "subject",  the subjects that perform the test, value from 1-30.
 3. Column 3 to 563 are 561 values with names processed(replace special charactors) from features.txt. The descriptions for the features are in feature_info.txt and features.txt . 
 4. Column 564 to 569 are the body_accelection triaxis data, which is the total acceleration minus the g. Mean and standard deviation of x,y,z samples. 
 5. Column 570 to 575 are the gyroscope triaxis data. Mean and standard deviation of x,y,z samples. 
@@ -52,6 +54,7 @@ The original data from the [UCI web site](http://archive.ics.uci.edu/ml/datasets
 
 5. All the data processed are merged into a big data matrix. 
 
+6. The above data from point #2 and #4, are averaged by each activity and each subject. 
 
 
 
